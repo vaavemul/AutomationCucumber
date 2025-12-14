@@ -28,7 +28,6 @@ public class LandingPageSteps {
 
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
     }
-
     @When("^User searched with shortname (.+) and extracted the name$")
     public void getName(String shortName) throws InterruptedException {
         prodName = lp.searchItem(shortName);
